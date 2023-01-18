@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.container{
+    max-width: 430px;
+    width: 100%;
+    margin: 0 20px;
+    padding: 30px;
+}
+
+.container.active{
+    height: 75%;
+}
+
+ .formtitle{
+    width: 100%;
+    text-align: center;
+}
+
+.container .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.container .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+ .container .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+
+ .container .text{
+    color: #333;
+    font-size: 14px;
+}
+
+ .container a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+ .container a:hover{
+    text-decoration: underline;
+}
+
+ .container .button{
+    margin-top: 35px;
+}
+
+ .container .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+ .container .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    color: #fafafb;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #265df2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.error {
+  display: none;
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+  display: none;
+}
+
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 15px;
+}
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+}
+
+
+
+.validation-input-signin {
+    background-color: #f3aea9;
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.validation-input-signin i {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: #ab0d02;
+}
+
+.validation-input-signin h4 {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.validation-input-signup {
+    background-color: #f3aea9;
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.validation-input-signup i {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: #ab0d02;
+}
+
+.validation-input-signup h4 {
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.message-content {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
