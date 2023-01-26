@@ -6,7 +6,7 @@ class Connection{
             'host' => 'localhost',
             'user' => 'root',
             'password' => '',
-            'db' => 'blogculturedev',
+            'db' => 'blogculturedev1',
             'options' => [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false,
